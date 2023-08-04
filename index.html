@@ -5,6 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Portifólio de Getulio Zanotti" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -13,44 +19,65 @@
 	</head>
 	<body>
 		<header>
+			<h1>Portifólio</h1>
 			<nav>
-				<a href="#Sobre">Sobre</a>
+				<a href="#Formação">Formação</a>
 				<a href="#Projetos">Projetos</a>
 				<a href="#Contato">Contato</a>
 			</nav>
 		</header>
 		<main>
 			<section id="Sobre">
-				<h2>Olá eu sou o Getulio!</h2>
+				<img id="Getulio" src="getulio_foto.jpg" alt="" />
+				<div id="titulo">
+					<h2>Olá, eu sou o Getulio!</h2>
+					<h4>Front-End</h4>
+				</div>
 			</section>
 			<section id="skills">
-				<div id="hard_skills">
+				<div class="box" id="hard_skills">
 					<h3><span lang="en">Hard Skills</span></h3>
 					<ul>
 						<li>HTML 5</li>
 						<li>CSS</li>
-						<li>UX</li>
 						<li>WordPress</li>
+						<li>UX</li>
 					</ul>
 				</div>
-				<div id="soft_skills">
+				<div class="box" id="soft_skills">
 					<h3><span lang="en">Soft Skills</span></h3>
 					<ul>
 						<li>Comunicação</li>
+						<li>Solução de Problemas</li>
+						<li>Auto liderança</li>
 					</ul>
+				</div>
+			</section>
+			<section id="Projetos">
+				<h2>Projetos</h2>
+				<div class="container">
+					<div class="box">
+						<h4>Restaurante - Responsividade</h4>
+						<p>2º Trimestre SENAC 2023</p>
+					</div>
 				</div>
 			</section>
 			<section id="Contato">
 				<h2>Contato</h2>
-				<a href="https://www.linkedin.com/in/getuliozanotti" target="_blank"
-					><i class="bi bi-linkedin"></i>LinkedIn</a
-				>
-				<a href="https://github.com/getulio-zanotti" target="_blank"
-					><i class="bi bi-github"></i>GitHub</a
-				>
-				<a href="mailto:getuliozanotti@outlook.com"
-					><i class="bi bi-envelope-at-fill"></i> E-mail</a
-				>
+				<div class="midias">
+					<a href="https://www.linkedin.com/in/getuliozanotti" target="_blank"
+						><i class="bi bi-linkedin"></i> LinkedIn</a
+					>
+					<a href="https://github.com/getulio-zanotti" target="_blank"
+						><i class="bi bi-github"></i> GitHub</a
+					>
+					<a href="https://www.instagram.com/getuliozanotti/" target="_blank"
+						><i class="bi bi-instagram"></i> Instagram</a
+					>
+					<a href="mailto:getuliozanotti@outlook.com"
+						><i class="bi bi-envelope-at-fill"></i> E-mail</a
+					>
+				</div>
 			</section>
 		</main>
 	</body>

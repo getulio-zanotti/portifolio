@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	text-decoration: none;
+}
+/* ---Rolagem--- */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #602775 #101111;
+}
+*::-webkit-scrollbar {
+	width: 9px;
+	width: 9px;
+}
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track:hover,
+*::-webkit-scrollbar-track:active {
+	border-radius: 0px;
+	background-color: #000000;
+}
+*::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb:active {
+	border-radius: 6px;
+	background-color: #602775;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #dda0dd;
+}
+/* ---Rolagem--- */
+body {
+	background: #602775;
+	background: linear-gradient(to top right, #602775 0%, #000000 80%) no-repeat;
+}
+ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h1 {
+	font-size: max(2.8vw, 24px) !important;
+}
+h2 {
+	font-size: max(2.8vw, 20px) !important;
+}
+h3 {
+	font-size: max(2vw, 18px) !important;
+	align-self: center;
+}
+h4 {
+	font-size: max(1.6vw, 14px) !important;
+}
+p,
+a,
+li {
+	font-weight: 400;
+	font-size: max(1.4vw, 14px);
+}
+a {
+	transition: ease 0.3s;
+}
+a:hover {
+	color: #dda0dd;
+	font-weight: 600;
+	transform: scale(1.1);
+	transition: ease 0.3s;
+}
+a::selection,
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+li::selection,
+span::selection {
+	color: #dda0dd;
+	background-color: #000000;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	padding: 2% 3%;
+	border-bottom: 1px solid white;
+	justify-content: space-between;
+	align-items: center;
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	gap: 2em;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	padding: 2% 3%;
+}
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-evenly;
+	min-height: 35vh;
+}
+#Getulio {
+	border-radius: 50%;
+	width: max(50px, 20vw);
+	box-shadow: 1.6px 3px 7px 5px rgba(221, 160, 221, 0.35);
+}
+#skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.box {
+	border: 1px solid #dda0dd;
+	box-shadow: 2px 2px 2px #dda0dd;
+	padding: 1%;
+	min-height: 20vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+	border-radius: 1em;
+}
+#projetos {
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+}
+#Contato {
+	flex-direction: column;
+}
+.midias {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+}
