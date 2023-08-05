@@ -80,7 +80,7 @@ span::selection {
 header {
 	display: flex;
 	flex-direction: row;
-	padding: 2% 3%;
+	padding: 1.5% 3%;
 	border-bottom: 1px solid white;
 	justify-content: space-between;
 	align-items: center;
@@ -101,7 +101,7 @@ section {
 	align-items: center;
 	justify-content: center;
 	justify-content: space-evenly;
-	min-height: 35vh;
+	min-height: 40vh;
 }
 #Getulio {
 	border-radius: 50%;
@@ -117,6 +117,7 @@ section {
 	border: 1px solid #dda0dd;
 	box-shadow: 2px 2px 2px #dda0dd;
 	padding: 1%;
+	gap: 1em;
 	min-height: 20vh;
 	display: flex;
 	flex-direction: column;
@@ -125,13 +126,15 @@ section {
 	width: 30%;
 	border-radius: 1em;
 }
-#projetos {
-	display: flex;
+#Projetos {
 	flex-direction: column;
+	justify-content: space-evenly;
 }
 .container {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
+	gap: 2em;
 }
 #Contato {
 	flex-direction: column;
@@ -141,4 +144,58 @@ section {
 	flex-direction: row;
 	justify-content: space-evenly;
 	width: 100%;
+}
+footer {
+	display: flex;
+	flex-direction: row;
+	padding: 2% 3%;
+	border-top: 1px solid white;
+	justify-content: space-around;
+	align-items: center;
+}
+h4 a {
+	font-weight: 700;
+	font-size: max(1.6vw, 14px);
+	text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+	section {
+		min-height: 30vh;
+	}
+}
+@media screen and (max-width: 750px) {
+	#Projetos {
+		gap: 1em;
+	}
+	#Projetos .container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 600px) {
+	section {
+		flex-wrap: wrap;
+		min-height: 20vh;
+	}
+	.box {
+		min-width: 50%;
+	}
+	#skills {
+		gap: 2em;
+	}
+}
+@media screen and (max-width: 450px) {
+	h1 {
+		display: none;
+	}
+	header {
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 374px) {
+	#Sobre {
+		flex-direction: column;
+		gap: 1em;
+		padding: 1em;
+	}
 }
